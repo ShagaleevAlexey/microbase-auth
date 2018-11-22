@@ -1,0 +1,1 @@
+# Microbase auth manager
