@@ -53,6 +53,6 @@ class AuthManager:
                 payload = self.get_payload(token, signature_type=type)
                 return (payload, type)
             except Exception as e:
-                pass
+                raise e
 
-        return None
+        raise DecodeError
